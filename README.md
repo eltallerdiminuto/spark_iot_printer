@@ -1,27 +1,27 @@
 # spark_iot_printer
-CSN-A2 Micro panel Thermal printer connected to Spark Core.
+CSN-A2 Micro panel thermal printer connected to Spark Core.
 
-Doc here: http://elecfreaks.com/store/download/datasheet/Componnet/Printer/A2-user%20manual.pdf
+Printer doc and specs [here](http://elecfreaks.com/store/download/datasheet/Componnet/Printer/A2-user%20manual.pdf).
 
-Printer here: https://learn.adafruit.com/mini-thermal-receipt-printer
+Buy the printer [here](https://learn.adafruit.com/mini-thermal-receipt-printer).
 
 
 ##Wiring:
 
 The printer labels TX and RX are *WRONG*. You must exchange positions.
 
-    Spark Core   RX     -->    TX CSN-A2
-    Spark Core   TX     -->    RX CSN-A2
-    Spark Core   VIN    -->    DCIN | VH
-    Spark Core   GND    -->    DCIN | GND
+    Spark Core   RX     -->    TX            CSN-A2
+    Spark Core   TX     -->    RX            CSN-A2
+    Spark Core   VIN    -->    DCIN | VH     CSN-A2
+    Spark Core   GND    -->    DCIN | GND    CSN-A2
 
 
-###Compile:
+##Compile:
 (from dir below)
 
     spark cloud compile spark_iot_printer
 
-###Flash:
+##Flash:
 
 Using cloud:
 
